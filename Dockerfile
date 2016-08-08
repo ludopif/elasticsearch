@@ -6,6 +6,9 @@ EXPOSE 9200
 EXPOSE 9300
 USER 0
 
+ENV http_proxy=http://p-niceway.rd.francetelecom.fr:3128
+ENV https_proxy=http://p-niceway.rd.francetelecom.fr:3128
+
 ENV HOME=/opt/app-root/src \
   JAVA_VER=1.8.0 \
   ES_VER=1.5.2 \
